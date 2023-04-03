@@ -54,6 +54,7 @@ header{
     
 } 
 /* sezione main */
+    /* dev section */
 section{
     background-color: aqua;
     width: 100%;
@@ -78,11 +79,13 @@ section{
     width: 66%;
     background-color: crimson;
     min-height: 200px;
+    border-radius: 10%;
 }
 #col-sx-top{
     width: 32%;
     background-color: rgb(43, 220, 20);
     min-height: 200px;
+    border-radius: 10%;
 }
 .row-bottom{
     width: 80%;
@@ -97,8 +100,9 @@ section{
     justify-content: space-between;
     background-color: darkred;
     min-height: 200px;
+    border-radius: 10%;
 }
-    /* regole responsive */
+    /* regole responsive dev section  */
     @media screen and (max-width:480px){
         .row-top{
             display: block;
@@ -121,6 +125,45 @@ section{
             margin-top: 20px;
             width: 100%;
         }
+    }
+    /* dev section */
+    .strategic-section{
+        background-color: rgb(32, 5, 85);
+    }
+    .conteiner-strategic{
+        width: 80%;
+        background-color: darkgoldenrod;
+        min-height: 200px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+    }
+    #col-dx, #col-sx{
+        background-color: darkcyan;
+        width: 45%;
+        border: 2px solid red;
+        border-radius: 10%;
+    }
+    /* regole responsive dev section  */
+    @media screen and (max-width:780px){
+        .strategic-section{
+            padding: 20px 0;
+
+        }
+        .conteiner-strategic{
+            display: block;
+            margin: 0 auto;
+        }
+        #col-dx, #col-sx{
+            width: 100%;
+            min-height: 200px ;
+            background-color: darkcyan;
+
+        }
+        #col-sx{
+            margin-top: 20px;
+        }
+
 
 
 
@@ -130,6 +173,9 @@ section{
 
 
     }
+
+
+
 
 
 
