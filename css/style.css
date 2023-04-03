@@ -126,9 +126,10 @@ section{
             width: 100%;
         }
     }
-    /* dev section */
+        /* dev section */
     .strategic-section{
         background-color: rgb(32, 5, 85);
+        padding: 20px 0;
     }
     .conteiner-strategic{
         width: 80%;
@@ -144,7 +145,7 @@ section{
         border: 2px solid red;
         border-radius: 10%;
     }
-    /* regole responsive dev section  */
+    /* regole responsive strategic section  */
     @media screen and (max-width:780px){
         .strategic-section{
             padding: 20px 0;
@@ -163,16 +164,45 @@ section{
         #col-sx{
             margin-top: 20px;
         }
-
-
-
-
-
-
-
-
-
     }
+     /* recensioni section */
+     .partner-section{
+        background-color: rgb(155, 120, 225);
+     padding: 20px 0;
+     }
+     .conteiner-partner{
+        width: 80%;
+        background-color: darkgoldenrod;
+        min-height: 200px;
+        margin: 0 auto;
+        text-align: center;
+     }
+     .title-partner{
+        background-color: rgb(246, 31, 16);
+        min-height: 100px;
+        text-align: center;
+     }
+     .recensioni-partner{
+        background-color: rgb(227, 172, 168);
+        min-height: 100px;
+        text-align: center;
+        margin-top: 10px;
+     }
+     .recensioni{
+        background-color: rgb(168, 195, 227);
+        min-height: 100px;
+        text-align: center;
+        margin-top: 10px;
+        display: flex;
+     }
+      /* regole responsive partner section  */
+    @media screen and (max-width:780px){}
+
+
+    
+
+
+
 
 
 
