@@ -198,8 +198,50 @@ section{
       /* regole responsive partner section  */
     @media screen and (max-width:780px){}
 
-
+    /* sezione about-us */
     
+    .about-section{
+        background-color: rgb(1, 19, 52);
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .row-about{
+        width: 80%;
+        background-color: rgb(212, 192, 140);
+        min-height: 200px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+    }
+    #col-dx-about{
+        width: 66%;
+        background-color: rgb(39, 11, 16);
+        min-height: 200px;
+        border-radius: 10%;
+    }
+    #col-sx-about{
+        width: 32%;
+        background-color: rgb(30, 255, 0);
+        min-height: 200px;
+        border-radius: 10%;
+    }
+      /* regole responsive about-us section  */
+      @media screen and (max-width:480px){
+        .row-about{
+            display: block;
+            margin: 0 auto;
+        }
+        #col-dx-about, #col-sx-about{
+            width: 100%;
+            margin: 0 auto;
+        }
+        #col-sx-about{
+            margin-top: 20px;
+        }
+      }
+
+
+
 
 
 
