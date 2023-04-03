@@ -37,7 +37,7 @@ header{
     height: 50px;
 }
 
-/* regole responsive */
+    /* regole responsive */
 @media screen and (max-width:780px) {
     #header-nav{
         display: none;
@@ -53,5 +53,86 @@ header{
     }
     
 } 
+/* sezione main */
+section{
+    background-color: aqua;
+    width: 100%;
+    min-height: 200px;
+    margin-bottom: 20px;
+}
+
+.dev-section{
+    background-color: cornflowerblue;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.row-top{
+    width: 80%;
+    background-color: darkgoldenrod;
+    min-height: 200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+#col-dx-top{
+    width: 66%;
+    background-color: crimson;
+    min-height: 200px;
+}
+#col-sx-top{
+    width: 32%;
+    background-color: rgb(43, 220, 20);
+    min-height: 200px;
+}
+.row-bottom{
+    width: 80%;
+    background-color: darkgoldenrod;
+    min-height: 200px;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-between;
+}
+.col-bottom{
+    width: calc(100%/3 - 20px);
+    justify-content: space-between;
+    background-color: darkred;
+    min-height: 200px;
+}
+    /* regole responsive */
+    @media screen and (max-width:480px){
+        .row-top{
+            display: block;
+            margin: 0 auto;
+        }
+        #col-dx-top, #col-sx-top{
+            width: 100%;
+            margin: 0 auto;
+        }
+        #col-sx-top{
+            margin-top: 20px;
+        }
+
+        .row-bottom{
+            margin: 0 auto;
+            display: block;
+        }
+
+        .col-bottom{
+            margin-top: 20px;
+            width: 100%;
+        }
+
+
+
+
+
+
+
+
+    }
+
+
+
+
     
 
