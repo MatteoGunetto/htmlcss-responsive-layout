@@ -165,7 +165,7 @@ section{
             margin-top: 20px;
         }
     }
-     /* recensioni section */
+     /* partner section */
      .partner-section{
         background-color: rgb(155, 120, 225);
      padding: 20px 0;
@@ -197,6 +197,53 @@ section{
      }
       /* regole responsive partner section  */
     @media screen and (max-width:780px){}
+
+    /* benefit section */
+    .benfit-section{
+        background-color: rgb(23, 15, 37);
+     padding: 20px 0;
+     }
+     .conteiner-benfit{
+        width: 80%;
+        background-color: rgb(6, 93, 29);
+        min-height: 200px;
+        margin: 0 auto;
+     }
+     .row-benefit{
+        background-color: rgb(11, 158, 184);
+        min-height: 200px;
+        margin: 20px auto;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .col-benefit{
+        width: calc(100%/3 - 20px);
+        background-color: darkred;
+        min-height: 200px;
+        border-radius: 10%;
+        margin-top: 20px;
+    }
+      /* regole tablet responsive benefit section  */
+      @media screen and (max-width:780px){
+        .col-benefit{
+            width: calc(100%/2 - 20px);
+            background-color: darkred;
+            min-height: 200px;
+            border-radius: 10%;
+            margin-top: 20px;
+        }
+      }
+      /* regole mobile responsive benefit section  */
+      @media screen and (max-width:480px){
+        .col-benefit{
+            width: 100%;
+            background-color: darkred;
+            min-height: 200px;
+            border-radius: 10%;
+            margin-top: 20px;
+        }
+      }
 
     /* sezione about-us */
     
@@ -239,13 +286,37 @@ section{
             margin-top: 20px;
         }
       }
-
-
-
-
-
-
-
+       /* sezione get_started */
+       .get_started-section{
+        background-color: rgb(24, 0, 71);
+        padding: 20px 0;
+     }
+     .conteiner-get_started{
+        width: 80%;
+        background-color: rgb(150, 147, 139);
+        min-height: 200px;
+        margin: 0 auto;
+        text-align: center;
+     }
+     .title-get_started{
+        background-color: rgb(27, 2, 1);
+        min-height: 100px;
+        text-align: center;
+     }
+     /* regole responsive get_started section  */
+     @media screen and (max-width:480px){}
+    /* regole footer */
+footer{
+    width: 100%;
+    min-height: 200px;
+    background-color: rgb(0, 0, 0);
+}
+.footer-conteiner{
+    width: 80%;
+    margin: 0 auto;
+    background-color: aqua;
+    min-height: 200px;
+}
 
 
 
