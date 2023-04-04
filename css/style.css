@@ -389,31 +389,70 @@ section{
     /* sezione about-us */
     
     .about-section{
-        background-color: rgb(1, 19, 52);
+        /* background-color: rgb(1, 19, 52); */
         padding-top: 20px;
         padding-bottom: 20px;
     }
     .row-about{
         width: 80%;
-        background-color: rgb(212, 192, 140);
+        /* background-color: rgb(212, 192, 140); */
         min-height: 200px;
         margin: 0 auto;
         display: flex;
         justify-content: space-between;
     }
     #col-dx-about{
-        width: 66%;
-        background-color: rgb(39, 11, 16);
-        min-height: 200px;
-        border-radius: 10%;
+        width: 60%;
+        /* background-color: rgb(39, 11, 16); */
+        border-radius: 1rem;
     }
+    .aboutus-title{
+        font-size: 40px;
+        color: #9593e6;
+        padding: 2rem 2rem;
+    }
+    #col-dx-about p{
+        padding: 2rem 2rem;
+    }
+
     #col-sx-about{
-        width: 32%;
-        background-color: rgb(30, 255, 0);
-        min-height: 200px;
-        border-radius: 10%;
+        width: 38%;
+        /* background-color: rgb(30, 255, 0); */
+        border-radius: 1rem;
+    }
+    .img-aboutus{
+        max-width: 50%;
+        border-radius: 50%;
+    }
+    .col-sx-aboutus-text{
+        padding-top: 1rem;
+        padding-right: 5rem;
+    }
+    .col-sx-aboutus-text h3{
+        color: #9593e6;
+        font-size: 30px;
+        padding-bottom: 2rem;
+    }
+    .col-sx-aboutus-text a{
+        color: white;
+        background-color: #9593e6;
+        padding: 0.5rem 2rem;
+        border-radius: 22px;
+        text-decoration: none;
     }
       /* regole responsive about-us section  */
+      @media screen and (max-width:780px){
+        #col-dx-about, #col-sx-about{
+            width: calc(100%/2);
+        }
+        .col-sx-aboutus-text a{
+            padding: 0.5rem 1rem;
+        }
+
+      }
+
+
+
       @media screen and (max-width:480px){
         .row-about{
             display: block;
