@@ -65,9 +65,7 @@ header{
 } 
 /* sezione main */
 section{
-    /* background-color: aqua; */
     width: 100%;
-    margin-bottom: 20px;
 }
     /* dev section */
 
@@ -121,6 +119,7 @@ section{
     background-color: #b5ddff;
     border-radius:22px;
     text-align: center;
+    padding: 0 3rem;
 }
 .fa-file-code{
     color: #0084fd;
@@ -135,8 +134,6 @@ section{
 
 .row-bottom{
     width: 80%;
-    /* background-color: darkgoldenrod; */
-    /* min-height: 200px; */
     margin: 20px auto;
     display: flex;
     justify-content: space-between;
@@ -147,6 +144,7 @@ section{
     background-color: #b5ddff;
     border-radius:22px;
     text-align: center;
+    padding: 4rem 3rem;
 }
 
 .fa-compass-drafting{
@@ -165,7 +163,6 @@ section{
     font-size: 4rem;
     padding-top: 2rem;
 }
-
 
 .col-bottom h3{
     font-size: 1rem;
@@ -280,19 +277,26 @@ section{
         width: 80%;
         margin: 0 auto;
      }
-     .conteiner-img-recensione{
-        width: 40%;
-        object-fit: fill;
-        padding: 2rem;
-     }
      .img-recensione{
-        max-width: 100%;
+        max-width: 50%;
         border-radius: 50%;
-        object-fit: fill;
      }
      .title-partner{
         text-align: center;
      }
+     .title-partner h3{
+        color: #9593e6;
+        font-size: 30px;
+        padding: 2rem 0;
+     }
+     .title-partner p{
+        display: block;
+        padding: 2rem 0;
+        width: 70%;
+        margin: 0 auto;
+     }
+
+
      .text-recensione{
         color: white;
         padding: 2rem;
@@ -330,6 +334,11 @@ section{
      .benefit-titile{
         text-align: center;
      }
+     .benefit-titile h2{
+        color: white;
+        padding: 2rem;
+     }
+
      .row-benefit{
         /* background-color: rgb(11, 158, 184); */
         min-height: 200px;
@@ -525,13 +534,38 @@ section{
     /* regole footer */
 footer{
     width: 100%;
-    min-height: 200px;
-    background-color: rgb(0, 0, 0);
+    background-color: #333333;
 }
 .footer-conteiner{
     width: 80%;
     margin: 0 auto;
+    text-align: center;
+    color: white;
+    padding: 5rem 0;
 }
+.footer-conteiner p{
+    display: block;
+    width: 40%;
+    margin: 0 auto;
+    padding-bottom: 2rem;
+}
+.footer-conteiner a{
+    color: #9593e6;
+}
+ /* regole responsive get_started section  */
+ @media screen and (max-width:780px){
+    .footer-conteiner{
+        width: 100%;
+        text-align: center;
+        padding: 5rem 0;
+    }
+    .footer-conteiner p{
+        display: block;
+        width: 100%;
+        padding-bottom: 2rem;
+    }
+
+ }
 
 
 
