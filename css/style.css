@@ -436,7 +436,7 @@ section{
     .col-sx-aboutus-text a{
         color: white;
         background-color: #9593e6;
-        padding: 0.5rem 2rem;
+        padding: 0.5rem 1rem;
         border-radius: 22px;
         text-decoration: none;
     }
@@ -445,13 +445,8 @@ section{
         #col-dx-about, #col-sx-about{
             width: calc(100%/2);
         }
-        .col-sx-aboutus-text a{
-            padding: 0.5rem 1rem;
-        }
 
       }
-
-
 
       @media screen and (max-width:480px){
         .row-about{
@@ -468,23 +463,65 @@ section{
       }
        /* sezione get_started */
        .get_started-section{
-        background-color: rgb(24, 0, 71);
+        background-color: #9593e6;
         padding: 20px 0;
      }
      .conteiner-get_started{
         width: 80%;
-        background-color: rgb(150, 147, 139);
-        min-height: 200px;
         margin: 0 auto;
         text-align: center;
      }
-     .title-get_started{
-        background-color: rgb(27, 2, 1);
-        min-height: 100px;
-        text-align: center;
+     .title-get_started h2{
+        color: white;
+        font-size: 30px;
+        padding: 2rem 0;
+     }
+     .title-get_started h1{
+        color: yellow;
+        font-size: 100px;
+        padding-bottom:2rem ;
+     }
+     .title-get_started p{
+        display: block;
+        color: white;
+        width: 40%;
+        margin: 0 auto;
+        padding-bottom: 5rem;
+     }
+     .title-get_started>span{
+        color: grey;
+     }
+     .get_started-bottone{
+        text-decoration: none;
+        background-color: white;
+        color: #9593e6;
+        padding: 1.5rem 5rem;
+        border-radius: 50px;
+        font-weight: bold;
+     }
+     .get_started-text{
+        padding: 4rem 0;
+        font-size: 15px;
+        color: white;
+     }
+     .fa-circle{
+        font-size: 5px;
+        vertical-align: middle;
+     }
+     .get_started-text a{
+        color: white;
      }
      /* regole responsive get_started section  */
-     @media screen and (max-width:480px){}
+     @media screen and (max-width:480px){
+        .title-get_started h1{
+            font-size: 80px;
+        }
+         .title-get_started p{
+            display: block;
+            width: 80%;
+            margin: 0 auto;
+        }
+     }
     /* regole footer */
 footer{
     width: 100%;
@@ -494,8 +531,6 @@ footer{
 .footer-conteiner{
     width: 80%;
     margin: 0 auto;
-    background-color: aqua;
-    min-height: 200px;
 }
 
 
