@@ -208,25 +208,49 @@ section{
             width: 100%;
         }
     }
-        /* dev section */
+        /* strategic section */
     .strategic-section{
-        background-color: rgb(32, 5, 85);
+        background-color: #9593e6;
         padding: 20px 0;
     }
     .conteiner-strategic{
-        width: 80%;
-        background-color: darkgoldenrod;
-        min-height: 200px;
+        width: 70%;
         margin: 0 auto;
         display: flex;
         justify-content: space-between;
     }
     #col-dx, #col-sx{
-        background-color: darkcyan;
-        width: 45%;
-        border: 2px solid red;
-        border-radius: 10%;
+        width: calc(100%/2 - 2rem);
     }
+    .strategic-dx-img{
+        max-width: 100%;
+    }
+
+    #col-sx{
+        padding-top: 6rem;
+    }
+    .sx-col-conteiner{
+        width: 60%;
+        margin: 0 auto;
+        background-color: white;
+        border-radius: 1rem;
+        text-align: center;
+        padding: 2rem;
+    }
+
+    .strategic-sx-img{
+        max-width: 100%;
+    }
+
+    .sx-col-conteiner p{font-style: italic;
+        padding: 1rem;
+    }
+    .fa-arrow-down{
+        background-color: #9593e6;
+        padding: 1rem;
+        border-radius: 50%;
+    }
+
     /* regole responsive strategic section  */
     @media screen and (max-width:780px){
         .strategic-section{
@@ -237,10 +261,11 @@ section{
             display: block;
             margin: 0 auto;
         }
+        .sx-col-conteiner{
+            width: 100%;
+        }
         #col-dx, #col-sx{
             width: 100%;
-            min-height: 200px ;
-            background-color: darkcyan;
 
         }
         #col-sx{
@@ -249,70 +274,106 @@ section{
     }
      /* partner section */
      .partner-section{
-        background-color: rgb(155, 120, 225);
      padding: 20px 0;
      }
      .conteiner-partner{
         width: 80%;
-        background-color: darkgoldenrod;
-        min-height: 200px;
         margin: 0 auto;
-        text-align: center;
+     }
+     .conteiner-img-recensione{
+        width: 40%;
+        object-fit: fill;
+        padding: 2rem;
+     }
+     .img-recensione{
+        max-width: 100%;
+        border-radius: 50%;
+        object-fit: fill;
      }
      .title-partner{
-        background-color: rgb(246, 31, 16);
-        min-height: 100px;
         text-align: center;
      }
-     .recensioni-partner{
-        background-color: rgb(227, 172, 168);
-        min-height: 100px;
-        text-align: center;
-        margin-top: 10px;
+     .text-recensione{
+        color: white;
+        padding: 2rem;
+        justify-content: center;
+
      }
      .recensioni{
         background-color: rgb(168, 195, 227);
-        min-height: 100px;
-        text-align: center;
         margin-top: 10px;
         display: flex;
+        border-radius: 2rem;
+        justify-content: center;
      }
       /* regole responsive partner section  */
-    @media screen and (max-width:780px){}
+    @media screen and (max-width:480px){
+        .recensioni{
+            display: block;
+        }
+        .conteiner-img-recensione{
+            width: 100%;
+        }
+    }
+
 
     /* benefit section */
-    .benfit-section{
-        background-color: rgb(23, 15, 37);
+    .benefit-section{
      padding: 20px 0;
+     background-color: #9593e6;
      }
      .conteiner-benfit{
         width: 80%;
-        background-color: rgb(6, 93, 29);
-        min-height: 200px;
+        /* background-color: rgb(6, 93, 29); */
         margin: 0 auto;
      }
+     .benefit-titile{
+        text-align: center;
+     }
      .row-benefit{
-        background-color: rgb(11, 158, 184);
+        /* background-color: rgb(11, 158, 184); */
         min-height: 200px;
         margin: 20px auto;
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
     }
+
     .col-benefit{
-        width: calc(100%/3 - 20px);
-        background-color: darkred;
+        width: calc(100%/3 - 1.5rem);
+        background-color: rgb(255, 255, 255);
+        border-radius: 1rem;
         min-height: 200px;
-        border-radius: 10%;
         margin-top: 20px;
+        padding: 0 2rem ;
+        padding-bottom: 1rem;
     }
+    .number{
+        font-size: 40px;
+        color: #9593e6;
+        padding: 2rem 0;
+    }
+    .col-benefit h3{
+        color: #9593e6;
+    }
+    .col-benefit p{
+        padding: 2rem 0;
+    }
+    .bottone-benefit{
+        padding: 0.5rem 2rem;
+        color: white;
+        background-color: #9593e6;
+        border-radius: 22px;
+    }
+    #spaziature-bottone{
+        padding-bottom: 1rem;
+    }
+
       /* regole tablet responsive benefit section  */
       @media screen and (max-width:780px){
         .col-benefit{
             width: calc(100%/2 - 20px);
-            background-color: darkred;
-            min-height: 200px;
-            border-radius: 10%;
+            border-radius: 1rem;
             margin-top: 20px;
         }
       }
@@ -320,9 +381,7 @@ section{
       @media screen and (max-width:480px){
         .col-benefit{
             width: 100%;
-            background-color: darkred;
-            min-height: 200px;
-            border-radius: 10%;
+            border-radius: 1rem;
             margin-top: 20px;
         }
       }
