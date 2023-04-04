@@ -64,43 +64,79 @@ header{
     }
 } 
 /* sezione main */
-    /* dev section */
 section{
-    background-color: aqua;
+    /* background-color: aqua; */
     width: 100%;
-    min-height: 200px;
     margin-bottom: 20px;
 }
+    /* dev section */
 
 .dev-section{
-    background-color: cornflowerblue;
-    padding-top: 20px;
+    padding-top: 200px;
     padding-bottom: 20px;
 }
 .row-top{
     width: 80%;
-    background-color: darkgoldenrod;
-    min-height: 200px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
+    gap: 2rem;
 }
 #col-dx-top{
     width: 66%;
-    background-color: crimson;
-    min-height: 200px;
-    border-radius: 10%;
+    background-color: #b5ddff;
+    border-radius: 1rem;
+    display: flex;
+    gap: 2rem;
 }
+.col-dx-text{
+    padding-left: 2rem;
+}
+.col-dx-text h3{
+    color: #0084fd;
+    padding: 2rem 0;
+}
+.col-dx-text p{
+    color: grey;
+    font-weight: bold;
+    padding-bottom: 2rem;
+}
+.col-dx-text span a{
+    background-color: #0084fd;
+    color: white;
+    padding: 0.5rem 2rem;
+    border-radius: 22px;
+    text-decoration: none;
+
+}
+.col-dx-img{
+    display: block;
+    max-width: 100%;
+    padding-right: 2rem;
+    padding-top: 3rem;
+}
+
 #col-sx-top{
     width: 32%;
-    background-color: rgb(43, 220, 20);
-    min-height: 200px;
-    border-radius: 10%;
+    background-color: #b5ddff;
+    border-radius:22px;
+    text-align: center;
 }
+.fa-file-code{
+    color: #0084fd;
+    font-size: 4rem;
+    padding-top: 2rem;
+}
+#col-sx-top h3{
+    font-size: 1rem;
+    color: #0084fd;
+    padding: 1rem 0;
+}
+
 .row-bottom{
     width: 80%;
-    background-color: darkgoldenrod;
-    min-height: 200px;
+    /* background-color: darkgoldenrod; */
+    /* min-height: 200px; */
     margin: 20px auto;
     display: flex;
     justify-content: space-between;
@@ -108,12 +144,47 @@ section{
 .col-bottom{
     width: calc(100%/3 - 20px);
     justify-content: space-between;
-    background-color: darkred;
-    min-height: 200px;
-    border-radius: 10%;
+    background-color: #b5ddff;
+    border-radius:22px;
+    text-align: center;
 }
+
+.fa-compass-drafting{
+    color: #0084fd;
+    font-size: 4rem;
+    padding-top: 2rem;
+}
+
+.fa-laptop-code{
+        color: #0084fd;
+        font-size: 4rem;
+        padding-top: 2rem;
+}
+.fa-bullhorn{
+    color: #0084fd;
+    font-size: 4rem;
+    padding-top: 2rem;
+}
+
+
+.col-bottom h3{
+    font-size: 1rem;
+    color: #0084fd;
+    padding: 1rem 0;
+}
+
+
+
+
+
     /* regole responsive dev section  */
-    @media screen and (max-width:480px){
+    @media screen and (max-width:810px){
+        #col-dx-top{
+            display: block
+        }
+    }
+
+    @media screen and (max-width:375px){
         .row-top{
             display: block;
             margin: 0 auto;
@@ -121,6 +192,7 @@ section{
         #col-dx-top, #col-sx-top{
             width: 100%;
             margin: 0 auto;
+            display: block;
         }
         #col-sx-top{
             margin-top: 20px;
